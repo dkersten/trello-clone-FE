@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collab716</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9523dac2a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Collaboration for Your Team</h1>
+        <div class="control-container">
+            <h2 class="add-card-header">Add a Card</h2>
+            <span class="modal-add"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="card-container">
+            <div class="col-1-of-3 up-next">
+                <h2>Tasks Up Next</h2>
+                <div class="card-col-bg up-next-cards">
+                    
+                </div>
+            </div>
+            <div class="col-1-of-3 in-progress">
+                <h2>Tasks in Progress</h2>
+                <div class="card-col-bg in-progress-cards">
+                    
+                </div>
+            </div>
+            <div class="col-1-of-3 completed">
+                <h2>Tasks Completed</h2>
+                <div class="card-col-bg completed-cards">
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="add-card-modal">
+        <form id="add-card-form" action="">
+            <span id="close-add-card-modal"><i class="far fa-window-close"></i></span>
+            <h3>Add a Task</h3>
+            <fieldset>
+                <label for="task-name">Name of Task:</label>
+                <input id="task-name" type="text" name="task-name">
+            </fieldset>
+            <fieldset>
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="taskDueDate" name="due-date">
+            </fieldset>
+            <fieldset>
+                <label for="team-assignment">Assign to Team...</label>
+                <select name="teams" id="team-select">
+                    <option value="1">Team 1</option>
+                    <option value="2">Team 2</option>
+                    <option value="3">Team 3</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="task-description">Task Description:</label>
+                <textarea name="task-description" id="task-description" cols="40" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="status">Task Status:</label>
+                <select id="status">
+                    <option value="Up Next">Up Next</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </fieldset>
+            <button type="submit">Add Card</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
